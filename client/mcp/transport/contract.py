@@ -1,0 +1,1 @@
+# common interface for stdio and streamable http
