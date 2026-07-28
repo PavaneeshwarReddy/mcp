@@ -17,7 +17,7 @@ func NewHandler(service *Service) Handler {
 	}
 }
 
-func (h *Handler) Register() gin.HandlerFunc {
+func (h *Handler) RegisterUser() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		var req RegisterUserRequest
 		if err := ctx.ShouldBindJSON(&req); err != nil {

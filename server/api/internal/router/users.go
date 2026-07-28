@@ -14,7 +14,7 @@ Usage: All the user routes are listed
 func registerUserRouter(r *gin.Engine, hdlr *users.Handler) {
 	userRouterGrp := r.Group("/user")
 
-	userRouterGrp.POST("/register", hdlr.Register()) // create new user
+	userRouterGrp.POST("/register", hdlr.RegisterUser()) // create new user
 
 	userRouterGrp.GET("/:id") // get user details
 	userRouterGrp.PUT("/:id") // edit user details
