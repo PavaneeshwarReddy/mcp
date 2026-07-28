@@ -8,7 +8,7 @@ import (
 
 func Build(db *gorm.DB) *Dependencies {
 	userRepo := users.NewRepository(db)
-	userSvc := users.NewService(&userRepo)
+	userSvc := users.NewService(userRepo)
 	userHdlr := users.NewHandler(&userSvc)
 
 	return &Dependencies{

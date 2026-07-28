@@ -11,3 +11,5 @@ type RegisterUserRequest struct {
 	Email    *string `json:"email,omitempty"`
 	Age      uint    `json:"age"`
 }
+
+type RegisterUserResponse struct{}
